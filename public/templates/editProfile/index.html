@@ -1,0 +1,31 @@
+<template name='editProfile'>
+    <!--CONTENT START-->
+    <div class="container">
+        <div class="row">
+            <!--SIDEBAR START-->
+            {{> editProfileNav}}
+            <!--SIDEBAR END-->
+
+            <!--EDIT PROFILE CONTENT START-->
+            <div class="col-12 col-md-9">
+                <!--EDIT PERSONAL START-->
+                {{> editProfilePersonal}}
+                <!--EDIT PERSONAL END-->
+
+                <!--EDIT ID START-->
+                {{> editProfileId}}
+                <!--EDIT ID END-->
+
+                <!--EDIT EXPERIENCE START-->
+               {{> editProfileExp}}
+                <!--EDIT EXPERIENCE END-->
+
+                <!--EDIT RESUME START-->
+                {{> editProfileResume}}
+                <!--EDIT RESUME END-->
+            </div>
+            <!--EDIT PROFILE CONTENT END-->
+        </div>
+    </div>
+    <!--CONTENT END-->
+</template>

@@ -1,0 +1,48 @@
+<template name="LayoutNav">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <a class="navbar-brand" href="{{pathFor 'public.index'}}"><img src="img/kmitlLogo.PNG" style="height: 40px"> JobCE</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="nav navbar ml-auto flex-column flex-lg-row align-items-start" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="{{pathFor 'public.index'}}"  style="margin-right: 2rem">{{_ 'layout.nav_home'}}</a>
+                    </li>
+                    {{#unless user}}   <!--pass ค่า user ถ้าไม่มีค่า ให้แสดงแถบ login ถ้ามี user คือ login แล้ว ให้แถบนี้หายไป -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{pathFor 'public.login'}}" style="margin-right: 2rem">{{_ 'layout.nav_login'}}</a>
+                        </li>                    
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{pathFor 'public.signup'}}" style="margin-right: 2rem">{{_ 'layout.nav_signup'}}</a>
+                        </li>
+                    {{/unless}}
+                    
+                    {{#if user}} <!--ถ้ามีค่า user คือ login แล้วนั่นเอง ให้แสดงแถบ dropdown -->
+                        <li class="nav-item" style="margin-right: 2rem">
+                            <a class="nav-link" href="#">Matching Job</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="img/profile.png" style="width: 2rem">
+                                จัดการบัญชี
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <h6 class="dropdown-header">{{user.tName}}</h6>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="{{pathFor 'private.profile'}}">โปรไฟล์</a>
+                                <a class="dropdown-item" href="{{pathFor 'private.editProfile'}}">แก้ไขโปรไฟล์</a>
+                                <a class="dropdown-item" href="#">ภาพรวม</a>
+                                <a class="dropdown-item" href="#">ตั้งประกาศ</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#"id="logout">ออกจากระบบ</a>
+                            </div>
+                        </li>
+                    {{/if}}
+                </ul>
+            </div>
+        </nav>
+</template>

@@ -1,0 +1,26 @@
+<template name='Login'>
+    <div class="col-xs-16 col-md-4" style="margin: auto; padding-bottom: 1rem;background: white;top: 2rem;">
+            <h3 style="text-align: center;margin-bottom: 2rem">{{_ 'login.login'}}</h3>
+            <button type="button" class="btn btn-primary btn-lg btn-block">{{_ 'login.linkedin'}}</button>
+            <p style="text-align: center;margin-top: 1rem">{{_ 'login.or'}}
+                <hr>
+            </p>
+            <form id="login_form" method="POST">
+                <div class="form-group">
+                    <input type="email" class="form-control" id="email_login" placeholder="{{_ 'login.email'}}" name="username" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" id="pwd_login" placeholder="{{_ 'login.password'}}" name="password" required>
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox" value="remember">
+                        {{_ 'login.remember'}}
+                    </label>
+                </div>
+                <a><p>{{_ 'login.forgot'}}</p></a>
+                <button type="submit" class="btn btn-success btn-lg btn-block">{{_ 'login.login'}}</button>
+            </form>
+            <div id="warning-flash" style="color:red; float: right;"></div>
+        </div>        
+</template>

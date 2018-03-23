@@ -1,0 +1,58 @@
+<!-- call script that we use -> render home page, login page etc. -->
+<!-- include index.html file, template folder and lib folder -->
+
+<html>
+<head>
+    <title>JobCE</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/client.css">
+
+    <base href="/">
+    <!-- libraries -->
+    <script src="lib/jquery/3.3.1/jquery.min.js"></script>
+    <script src="lib/underscore.js/1.8.3/underscore.min.js"></script>
+    <script src="lib/handlebars.js/4.0.11/handlebars.min.js"></script>
+    <script src="lib/page.js/1.8.3/page.min.js"></script>
+    <script src="lib/moment.js/2.20.1/moment.min.js"></script>
+    <script src="lib/moment.js/locale.js"></script>
+</head>
+<body>
+    
+<!-- templates definitions -->
+<script type="text/hbs" src="templates/layout/nav.html" partial></script>
+<script type="text/hbs" src="templates/query/posts.html" partial></script>
+<script type="text/hbs" src="templates/layout/test.html" partial></script>
+<script type="text/hbs" src="templates/editProfile/nav.html" partial></script>
+<script type="text/hbs" src="templates/editProfile/personal.html" partial></script>
+<script type="text/hbs" src="templates/editProfile/id.html" partial></script>
+<script type="text/hbs" src="templates/editProfile/exp.html" partial></script>
+<script type="text/hbs" src="templates/editProfile/resume.html" partial></script>
+<script type="text/hbs" src="templates/layout/index.html"></script>
+<script type="text/hbs" src="templates/login/index.html"></script>
+<script type="text/hbs" src="templates/home/index.html"></script>
+<script type="text/hbs" src="templates/signup/index.html"></script>
+<script type="text/hbs" src="templates/jobPosting/index.html"></script>
+<script type="text/hbs" src="templates/query/index.html"></script>
+<script type="text/hbs" src="templates/profile/index.html"></script>
+<script type="text/hbs" src="templates/editProfile/index.html"></script>
+
+<!-- controller scripts -->
+<script type="text/ctrlr" src="templates/layout/index.js"></script>
+<script type="text/ctrlr" src="templates/signup/index.js"></script>
+<script type="text/ctrlr" src="templates/login/index.js"></script>
+<script type="text/ctrlr" src="templates/profile/index.js"></script>
+<script type="text/ctrlr" src="templates/editProfile/index.js"></script>
+
+<!-- plug in script -->
+<script src="js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+        integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+        crossorigin="anonymous"></script>
+
+<!-- initial -->
+<script type="text/ctrlr" src="js/client.js"></script>
+<script src="lib/crossbow.js/1.0.1/crossbow.js"></script>
+</body>
+</html>

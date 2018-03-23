@@ -1,0 +1,77 @@
+<template name="SignUp">
+<div class="col-xs-16 col-md-4"
+    style="margin: auto; padding-bottom: 1rem;background: white;top: 2rem;">
+    <h3 style="text-align: center;margin-bottom: 2rem">{{_ 'signup.signup'}}{{name}}</h3>
+    <button type="button" class="btn btn-primary btn-lg btn-block" id="BtnLinkedIn">{{_ 'signup.linkedin'}}</button>
+    <p style="text-align: center;margin-top: 1rem">{{_ 'signup.or'}}
+    <hr>
+    </p>
+
+    <form id="formSignup" method="POST">
+        <div class="form-group">
+            <select class="form-control" id="role">
+                <option name=role value=null>{{_ 'signup.role'}}</option>
+                <option name=role value="student">{{_ 'signup.student'}}</option>
+                <option name=role value="company">{{_ 'signup.company'}}</option>
+            </select>
+        </div>
+
+        <div class="select company">
+             <label><h6>{{_ 'signup.companyInfo'}}</h6></label>
+            <div class="form-group">
+                <input type="text" class="form-control" id="tCompany" placeholder="{{_ 'signup.companyTh'}}"
+                        name="tCompany">
+            </div>
+
+            <div class="form-group">
+                <input type="text" class="form-control" id="eCompany"
+                        placeholder="{{_ 'signup.companyEn'}}"
+                        name="eCompany">
+            </div>
+            <label><h6>{{_ 'signup.companyPerson'}}</h6></label>
+        </div>
+
+        <div class="select student">
+            <div class="form-group">
+                <input type="number" class="form-control" id="idStudent" placeholder="รหัสนักศึกษา"
+                        name="idStudent">
+            </div>
+        </div>
+
+        <div class="select company student">
+             <div class="form-group">
+                <input type="number" class="form-control" id="idCitizen" placeholder="{{_ 'signup.personID'}}"
+                        name="idCitizen" required>
+            </div>
+        </div>
+
+        <div class="select company">
+            <div class="form-group">
+                <input type="text" class="form-control" id="tName" placeholder="{{_ 'signup.personName'}}"
+                        name="tName">
+            </div>
+
+            <div class="form-group">
+                <input type="text" class="form-control" id="tSurname"
+                        placeholder="{{_ 'signup.personSurname'}}"
+                        name="tSurname">
+            </div>
+        </div>
+        
+        <div class="select company student">
+            <div class="form-group">
+                <input type="email" class="form-control" id="username" placeholder="{{_ 'signup.email'}}" name="username"
+                        required>
+            </div>
+
+            <div class="form-group">
+                <input type="password" class="form-control" id="password" placeholder="{{_ 'signup.pass'}}"
+                        name="password"
+                        required> 
+            </div>
+
+            <button type="submit" class="btn btn-success btn-lg btn-block" id="btn_submit">{{_ 'signup.signup'}}</button>
+        </div>
+    </form>
+    </div>
+</template>

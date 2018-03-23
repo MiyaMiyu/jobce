@@ -1,0 +1,47 @@
+<template name="JobPosting">
+    <div class="container">
+        <div class="row">
+            <div class="col-6 col-md-3 mt-3" id="sidebar">
+                <div class="mb-3">
+                    <h6 class="card-title" style="font-weight:bolder">{{_ 'jobposting.posttype'}}</h6>
+                    <div class="card">
+                        <div class="list-group list-group-flush" id="post_type">
+                            <a href="#" class="list-group-item list-group-item-action active">{{_ 'jobposting.jobposting'}}</a>
+                            <a href="#" class="list-group-item list-group-item-action">ฟรีแลนซ์</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <h6 class="card-title" style="font-weight:bolder">ประเภทการจ้างงาน</h6>
+                    <div class="card">
+                        <div class="list-group list-group-flush" id="employment_type">
+                            <a href="#" class="list-group-item list-group-item-action">นักศึกษาฝึกงาน</a>
+                            <a href="#" class="list-group-item list-group-item-action active">งานประจำ</a>
+                            <a href="#" class="list-group-item list-group-item-action">พาร์ทไทม์</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-12 col-md-9">
+                <h4 class="text-center">ประกาศงาน</h4>
+                <div class="d-flex flex-wrap">
+                    {{#each jobList}}
+                    <div class="p-2 col-lg-4">
+                        <div class="card">
+                            <a href="#"><img class="card-img-top" src="{{img}}" alt="work_pic"></a>
+                            <div class="card-body">
+                                <h4 class="card-title">{{title}}</h4>
+                                <p class="card-text">{{detail}}</p>
+                            </div>
+                            <div class="card-footer bg-white">
+                                <small class="text-muted">{{update}}</small>
+                            </div>
+                        </div>
+                    </div>
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+    </div>   
+</template>

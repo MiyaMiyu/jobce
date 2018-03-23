@@ -1,0 +1,132 @@
+<template name='editProfilePersonal'>
+    <!--EDIT PERSONAL START-->
+    <div class="card" id="editPersonal">
+        <h4 class="card-header">ข้อมูลส่วนตัว</h4>
+        <div class="card-body">
+            <form>
+                <div class="form-group row">
+                    <div class="mx-auto">
+                        <img src="img/work.jpg" class="rounded-circle" alt="ภาพโปรไฟล์"
+                             style="width: 200px;height: 200px">
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <div class="mx-auto">
+                        <input type="file" accept="image/png, image/jpeg, image/gif"
+                               name="input-file-preview">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="idStident" class="col-sm-3 col-form-label">รหัสนักศึกษา</label>
+                    <div class="col-sm-9">
+                        <input type="number" class="form-control" id="idStudent" placeholder="57010014" readonly>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="ePrename" class="col-sm-3 col-form-label">Prename</label>
+                    <div class="col-sm-9">
+                        <select class="form-control" id="ePrename">
+                            <option value=""></option>
+                            <option value="Mr.">Mr.</option>
+                            <option value="Miss" selected>Miss</option>
+                            <option value="Mrs.">Mrs.</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="eName" class="col-sm-3 col-form-label">Name</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control" id="eName"
+                               placeholder="ชื่อจริง ภาษาอังกฤษ">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="lastname_eng" class="col-sm-3 col-form-label">Surname</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control" id="eSurname"
+                               placeholder="นามสกุลจริง ภาษาอังกฤษ">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="email" class="col-sm-3 col-form-label">อีเมล</label>
+                    <div class="col-sm-9">
+                        <input type="email" class="form-control" id="email" placeholder="อีเมล" readonly>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="edit_pws" class="col-sm-3 col-form-label">รหัสผ่าน</label>
+                    <div class="col-sm-9">
+                        <button type="button" class="btn btn-outline-primary" data-toggle="modal"
+                                data-target="#edit_pws">
+                            แก้ไขหรือตั้งรหัสผ่าน
+                        </button>
+                        <div class="modal fade" id="edit_pws" tabindex="-1" role="dialog"
+                             aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">
+                                            แก้ไขหรือตั้งรหัสผ่าน</h5>
+                                        <button type="button" class="close" data-dismiss="modal"
+                                                aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <label class="col-form-label" for="password">รหัสผ่านใหม่</label>
+                                        <input type="password" class="form-control" id="password"
+                                               placeholder="รหัสผ่านใหม่">
+                                        <label class="col-form-label"
+                                               for="re_password">ยืนยันรหัสผ่านใหม่</label>
+                                        <input type="password" class="form-control" id="re_password"
+                                               placeholder="ยืนยันรหัสผ่านใหม่">
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                                data-dismiss="modal" id="canclePass">ยกเลิก
+                                        </button>
+                                        <button type="button" class="btn btn-primary" id="savePass">บันทึกการเปลี่ยนแปลง
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--<input type="password" class="form-control" id="password" placeholder="รหัสผ่าน">-->
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="tel" class="col-sm-3 col-form-label">เบอร์โทรศัพท์</label>
+                    <div class="col-sm-9">
+                        <input type="tel" class="form-control" id="tel" placeholder="0812345678">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="currentAddress" class="col-sm-3 col-form-label">ที่อยู่ปัจจุบัน</label>
+                    <div class="col-sm-9">
+                        <textarea class="form-control" id="currentAddress" rows="3"
+                                  placeholder="ที่อยู่ปัญจุบัน"></textarea>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="interest" class="col-sm-3 col-form-label">ความสนใจ</label>
+                    <div class="col-sm-9">
+                        <textarea class="form-control" id="interest" rows="3"
+                        placeholder="ความสนใจทางด้าน it"></textarea>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="hobby" class="col-sm-3 col-form-label">งานอดิเรก</label>
+                    <div class="col-sm-9">
+                        <textarea class="form-control" id="hobby" rows="3"
+                        placeholder="งานอดิเรก เช่น อ่านหนังสือ ฟังเพลง"></textarea>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-success btn-lg btn-block" id="submitPersonal">บันทึกการเปลี่ยนแปลง</button>
+            </form>
+        </div>
+    </div>
+    <!--EDIT PERSONAL END-->
+</template>

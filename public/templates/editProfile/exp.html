@@ -1,0 +1,95 @@
+<template name='editProfileExp'>
+    <div class="card" id="editExp">
+            <h4 class="card-header">การศึกษาและประสบการณ์</h4>
+            <div class="card-body">
+                <form>
+                    <div class="form-group row">
+                        <label for="language" class="col-sm-3 col-form-label">ความสามารถด้านภาษา</label>
+                        <div class="col-sm-9">
+                            <button type="button" class="btn btn-outline-primary" data-toggle="modal"
+                                    data-target="#language">
+                                + เพิ่มข้อมูล
+                            </button>
+                            <div class="modal fade" id="language" tabindex="-1" role="dialog"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title">
+                                                เพิ่มข้อมูลด้านภาษา</h5>
+                                            <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <label class="col-form-label" for="language">ภาษา</label>
+                                            <select class="form-control" id="language">
+                                                <option value="0"></option>
+                                                <option value="thai">ไทย</option>
+                                                <option value="english">อังกฤษ</option>
+                                                <option value="chinese">จีน</option>
+                                            </select>
+                                            <label class="col-form-label" for="level">ระดับความสามารถ</label>
+                                            <select class="form-control" id="level">
+                                                <option value="0"></option>
+                                                <option value="1">พอใช้</option>
+                                                <option value="2">ปานกลาง</option>
+                                                <option value="3">ดี</option>
+                                                <option value="3">ดีมาก</option>
+                                            </select>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                    data-dismiss="modal">ยกเลิก
+                                            </button>
+                                            <button type="button" class="btn btn-primary">เพิ่มข้อมูล
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="educate" class="col-sm-3 col-form-label">ประวัติการศึกษา</label>
+                        <div class="col-sm-9">
+                            <button type="button" class="btn btn-outline-primary" data-toggle="modal"
+                                    data-target="#educate">
+                                + เพิ่มข้อมูล
+                            </button>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="exp" class="col-sm-3 col-form-label">ประสบการณ์ทำงาน</label>
+                        <div class="col-sm-9">
+                            <button type="button" class="btn btn-outline-primary" data-toggle="modal"
+                                    data-target="#exp">
+                                + เพิ่มข้อมูล
+                            </button>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="skill" class="col-sm-3 col-form-label">ทักษะความสามารถ</label>
+                        <div class="col-sm-9">
+                            <button type="button" class="btn btn-outline-primary" data-toggle="modal"
+                                    data-target="#skil">
+                                + เพิ่มข้อมูล
+                            </button>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="cert" class="col-sm-3 col-form-label">ใบประกาศและรางวัล</label>
+                        <div class="col-sm-9">
+                            <button type="button" class="btn btn-outline-primary" data-toggle="modal"
+                                    data-target="#cert">
+                                + เพิ่มข้อมูล
+                            </button>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-success btn-lg btn-block" id="submitExp">บันทึกการเปลี่ยนแปลง</button>
+                </form>
+            </div>
+        </div>
+</template>

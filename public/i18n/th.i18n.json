@@ -1,0 +1,59 @@
+{
+    "layout":{
+        "nav_signup":"ลงทะเบียน",
+        "nav_login":"เข้าสู่ระบบ",
+        "nav_home":"หน้าหลัก"
+    },
+    "home":{
+        "slide1":"สีชมพู",
+        "slide1_detail":"นี่คือสีชมพู",
+        "slide2":"สีกาแฟ",
+        "slide2_detail":"นี่คือสีกาแฟ",
+        "slide3":"สีฟ้า",
+        "slide3_detail":"นี่คือสีฟ้า",
+        "postjob":"ประกาศรับสมัครงาน",
+        "intern":"นักศึกษาฝึกงาน",
+        "fulltime":"งานประจำ",
+        "parttime":"พาร์ทไทม์",
+        "findfreelance":"ตามหาฟรีแลนซ์",
+        "software":"Software",
+        "hardware":"Hardware",
+        "network":"Network"
+    },
+    "login":{
+        "login":"เข้าส่ระบบ",
+        "linkedin":"เข้าสู่ระบบด้วย LinkedIn",
+        "or":"หรือ",
+        "email":"อีเมล",
+        "password":"รหัสผ่าน",
+        "remember":"จำฉันในระบบ",
+        "forgot":"ลืมรหัสผ่าน?"
+    },
+    "signup":{
+        "signup":"ลงทะเบียน",
+        "linkedin":"ลงทะเบียนด้วย LinkedIn",
+        "or":"หรือ",
+        "role":"---- กรุณาเลือกบทบาทของท่าน ----",
+        "student":"นักศึกษา/ศิษย์เก่า",
+        "company":"บริษัท",
+        "studenID":"รหัสนักศึกษา",
+        "companyInfo":"ข้อมูลบริษัท",
+        "companyTh":"ชื่อบริษัทภาษาไทย",
+        "companyEn":"ชื่อบริษัทภาษาอังกฤษ",
+        "companyPerson":"ผู้ติดต่อ",
+        "personID":"เลขประจำตัวประชาชน",
+        "personName":"ชื่อภาษาไทย (ชื่อจริง)",
+        "personSurname":"นามสกุลภาษาไทย (นามสกุลจริง)",
+        "email":"อีเมล",
+        "pass":"รหัสผ่าน"
+    },
+    "jobposting":{
+        "jobposting":"ประกาศงาน",
+        "posttype":"ประเภทประกาศ",
+        "freelance":"ฟรีแลนซ์",
+        "jobtype":"ประเภทการจ้างงาน",
+        "intern":"นักศึกษาฝึกงาน",
+        "fulltime":"งานประจำ",
+        "parttime":"พาร์ทไทม์"  
+    }
+}
